@@ -18,6 +18,12 @@ Clone CFScanner repo:
 git clone https://github.com/MortezaBashsiz/CFScanner.git
 ```
 
+Install dependencies:
+
+```bash
+pip install -r ./requirements.txt
+```
+
 ### Configuration
 
 Before running the program you should provide a config, rename `config.json.example` to `config.json` and delete the comments.

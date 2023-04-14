@@ -1,0 +1,5 @@
+dnspython==2.3.0
+Flask==2.2.2
+playwright==1.32.1
+pytz==2023.3
+rich==13.3.4
