@@ -10,13 +10,25 @@
   // نام فایل ریزالت ورودی
   "last_result_path": "/path/to/CFScanner/result/20230413-175923-result.cf",
 
+  // آیا لیست ایپی های تست شده ریپو وحید استفاده شود؟
+  "include_list_ips": false,
+
+  // آیا ایپی لیست دومین های ریپو وحید استفاده شود؟
+  "include_list_domains": false,
+
+  // دومین های اضافه ای که در نظر دارین ایپی هاش استفاده شه در این ارایه وارد بشه
+  "additional_domains": ["mcin.ircf.space", "mtnn.ircf.space"],
+
+  // آیا ورودی ایپی های کاستوم استفاده شود؟
+  "include_custom_ips": true,
+
   // اگر فایل ایپی دارین که میخواین اسکن شه ادرس بدین
   "custom_ips_file_path": "custom_ips.txt",
 
   // تمامی ایپی های ورودی به برنامه را در یه فایل خروجی مینویسد
   "output_file": "combined_ips.txt",
 
-  // آیدی زود دامنه در کلودفلر
+  // آیدی زون دامنه در کلودفلر
   "zone_id": "aaaaaaaaaaaaaaaaaaaaaaaa",
 
   // ایمیل کلودفلر
@@ -25,27 +37,15 @@
   // گلوبال کلید رو از بخش پروفایل بدست بیارین
   "global_key": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
 
-  // آیا ورودی ایپی های کاستوم استفاده شود؟
-  "include_custom_ips": true,
-
-  // آیا لیست ایپی های تست شده ریپو وحید استفاده شود؟
-  "include_list_ips": false,
-
-  // آیا ایپی لیست دومین های ریپو وحید استفاده شود؟
-  "include_list_domains": false,
-
   // تعداد ماکسیموم رکورد هایی که در نظر دارید برای ساب شما ثبت شود
   "max_no_records": 3,
   
   // ساب دومین که در نظر دارین ایپی ها روش ثبت شه
   "sub_domain": "sub",
 
-  // دومین های اضافه ای که در نظر دارین ایپی هاش استفاده شه در این ارایه وارد بشه
-  "additional_domains": ["mcin.ircf.space", "mtnn.ircf.space"],
-
   // تعداد اسکن همزمان
-  "scan_concurrency": 6,
+  "scan_concurrency": 4,
 
   // سرعت تست اپلود
-  "upload_speed": 60
+  "upload_speed": 40
 }
