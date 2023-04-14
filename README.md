@@ -26,7 +26,11 @@ pip install -r ./requirements.txt
 
 ### Configuration
 
-Before running the program you should provide a config, rename `config.json.example` to `config.json` and delete the comments.
+Before running the program you should provide a config, copy `config.json.example` to `config.json` and delete the comments.
+
+```bash
+cp config.json.example config.json
+```
 
 Theses are the values:
 

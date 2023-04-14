@@ -7,9 +7,12 @@ def resolve_domains(domains):
 
     ips = []
     for domain in domains:
-        answer = my_resolver.query(domain)
-        for rdata in answer:
-            ips.append(str(rdata))
+        try:
+            answer = my_resolver.query(domain)
+            for rdata in answer:
+                ips.append(str(rdata))
+        except:
+            print(f"Error resolving {domain} ... moving on")
 
     print("Domains have been resolved")
 
