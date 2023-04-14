@@ -23,7 +23,7 @@ def retrieve_ips(config):
         all_ips.extend(public_ips)
 
     # reading ips from a local file
-    if config.include_custom_ips:
+    if config['include_custom_ips']:
         custom_ips = ipv4_list_file.read_list(config['custom_ips_file_path'])
         all_ips.extend(custom_ips)
 
