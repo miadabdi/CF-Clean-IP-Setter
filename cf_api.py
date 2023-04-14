@@ -105,7 +105,7 @@ class CFApi:
         if len(result_ips) == 0:
             raise Exception("No ips were found in result file")
         
-        print("Healthy IPs: ", '\n'.join([f'ip: {item["ip"]} delay: {item["delay"]}' for item in result_ips]))
+        print("Healthy IPs: \n", '\n'.join([f'ip: {item["ip"]} delay: {item["delay"]}' for item in result_ips]))
 
         print('Fetching existing records')
         existing_records = self.list_records()

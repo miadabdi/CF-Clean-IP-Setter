@@ -22,7 +22,7 @@ def get_file_ips(operator):
 
     print("Vahid IPs fetched")
 
-    filtered_ips = [item['ip'] for item in ips if item['operator'] == operator or operator == 'ALL']
+    filtered_ips = [item['ip'] for item in ips if item['operator'].upper() == operator.upper() or operator.upper() == 'ALL']
 
     return filtered_ips
 
@@ -37,7 +37,7 @@ def get_list_ips(filter_operator):
 
     print("List of IPs fetched")
 
-    filtered_ips = [item['ip'] for item in ips if (item['operator'] == filter_operator or filter_operator == 'ALL')]
+    filtered_ips = [item['ip'] for item in ips if (item['operator'].upper() == filter_operator.upper() or filter_operator.upper() == 'ALL')]
 
     return filtered_ips
 
@@ -47,7 +47,7 @@ def get_domains(operator):
 
     domains = []
     for domain, pvr in domains_json.items():
-        if (pvr == operator or operator == 'ALL'):
+        if (pvr.upper() == operator.upper() or operator.upper() == 'ALL'):
             domains.append(domain)
 
     return domains

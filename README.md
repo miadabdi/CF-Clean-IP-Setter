@@ -4,6 +4,8 @@ Test CloudFlare public ips and local file of ips and automatically set them to d
 
 It can retrieve and scan ips, and it can set them to a domain Or you can provide the result file and skip the scanning part of it.
 
+** Only usable with Vmess+WS+TLS configs **
+
 ## Usage
 
 Clone the repo:
@@ -35,7 +37,7 @@ cp config.json.example config.json
 Theses are the values:
 
 - **operator** (string) : The operator to retrieve the ips for. when providing a custom local list of ips, this option has no effect, but when fetching public ips this will effect since public ips come with information of what operator they should be used for.
-- **use_provided_result** (boolean) : determines if the program should use a provided result file and skip scanning. The result file is compatible with the result file of bash version of [CF Scanner](https://github.com/MortezaBashsiz/CFScanner).
+- **use_provided_result** (boolean) : determines if the program should use a provided result file and skip scanning or scan ips to create result itself. The result file is compatible with the result file of bash version of [CF Scanner](https://github.com/MortezaBashsiz/CFScanner).
 - **last_result_path** (string) : path to provided result file.
 - **include_list_ips** (boolean) : determines if the program should fetch ips from [this repo](https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.json)
 - **include_list_domains** (boolean) : determines if the program should fetch domains from [this repo](https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/providers.json) and resolve them to use their ips for scanning.
@@ -56,3 +58,23 @@ To run the program now run:
 ```bash
 python main.py
 ```
+
+## Operators
+
+Supported operator values:
+
+ALL (تمامی اپراتور ها)
+mci (همراه اول)
+mtn (ایرانسل)
+mkh (مخابرات)
+rtl (رایتل)
+hwb (هایوب)
+ast (آسیاتک)
+sht (شاتل)
+prs (پارس آنلاین)
+mbt (مبین نت)
+ask (اندیشه سبز)
+ztl (زیتل)
+psm (پیشگامان)
+shm (شاتل موبایل)
+fnv (فن آوا)
