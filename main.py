@@ -3,9 +3,17 @@ from scan import scan, find_last_result
 from retrieve_ips import retrieve_ips
 import json
 import os 
+from sys import argv
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-env_path = os.path.join(dir_path, "config.json")
+env_path = None
+for argument in argv:
+    if (argument.startswith("--config=")):
+        env_path = argument.replace('--config=', '')
+
+if env_path == None:
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    env_path = os.path.join(dir_path, "config.json")
+
 config = json.loads(open(env_path).read())
 
 if config['use_provided_result'] == False:

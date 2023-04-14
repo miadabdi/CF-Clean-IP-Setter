@@ -6,7 +6,7 @@ It can retrieve and scan ips, and it can set them to a domain Or you can provide
 
 ** Only usable with Vmess+WS+TLS configs **
 
-## Usage
+## Installation
 
 Clone the repo:
 
@@ -20,6 +20,8 @@ Clone CFScanner repo and prepare for execution:
 git clone https://github.com/MortezaBashsiz/CFScanner.git && chmod +x CFScanner/bin/*
 ```
 
+Also, CFScanner requires some dependencies, docs [here](https://github.com/MortezaBashsiz/CFScanner/tree/main/bash#requirements).
+
 Install dependencies:
 
 ```bash
@@ -28,7 +30,7 @@ pip install -r ./requirements.txt
 
 ### Configuration
 
-Before running the program you should provide a config, copy `config.json.example` to `config.json` and delete the comments.
+Before running the program you should provide a config, copy `config.json.example` to some file name like `config.json` and delete the comments.
 
 ```bash
 cp config.json.example config.json
@@ -56,7 +58,7 @@ Theses are the values:
 To run the program now run:
 
 ```bash
-python main.py
+python main.py --config=/path/to/config
 ```
 
 ## Operators
