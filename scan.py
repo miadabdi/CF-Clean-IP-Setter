@@ -21,8 +21,8 @@ def scan(ips_file, threads, speed, custom_config):
         os.remove(os.path.join('./CFScanner/config', f))
 
 def find_last_result():
-    onlyfiles = [f for f in os.listdir('./CFScanner/result') if os.path.isfile(os.path.join('./result', f))]
+    onlyfiles = [f for f in os.listdir('./CFScanner/bash/result') if os.path.isfile(os.path.join('./CFScanner/bash/result', f))]
     last_created_result = onlyfiles[-1]
-    last_created_result_path = f'./CFScanner/result/{last_created_result}'
+    last_created_result_path = f'./CFScanner/bash/result/{last_created_result}'
 
     return last_created_result_path
