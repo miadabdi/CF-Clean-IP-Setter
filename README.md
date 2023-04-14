@@ -12,10 +12,10 @@ Clone the repo:
 git clone https://github.com/miadabdi/CF-Clean-IP-Setter.git && cd CF-Clean-IP-Setter
 ```
 
-Clone CFScanner repo:
+Clone CFScanner repo and prepare for execution:
 
 ```bash
-git clone https://github.com/MortezaBashsiz/CFScanner.git
+git clone https://github.com/MortezaBashsiz/CFScanner.git && chmod +x CFScanner/bin/*
 ```
 
 Install dependencies:
@@ -49,6 +49,7 @@ Theses are the values:
 - **sub_domain** (string) : the sub domain you would like the clean ips to be set on.
 - **scan_concurrency** (int) : number of threads, to scan ips concurrently.
 - **upload_speed** (int) : desired speed of upload for scanning. (at the moment this script only supports upload testing)
+- **custom_config** (string) : path to custom config for [CF Scanner](https://github.com/MortezaBashsiz/CFScanner). You can figure out how to create one [here](https://github.com/MortezaBashsiz/CFScanner/tree/main/bash)
 
 To run the program now run:
 

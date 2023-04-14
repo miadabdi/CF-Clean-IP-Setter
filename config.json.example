@@ -47,5 +47,8 @@
   "scan_concurrency": 4,
 
   // سرعت تست اپلود
-  "upload_speed": 40
+  "upload_speed": 40,
+
+  // مسیر کانفیگ کاستوم برای اسکنر مرتضی
+  "custom_config": ""
 }
