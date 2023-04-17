@@ -21,8 +21,14 @@
   "include_list_domains": false,
 
   // دومین های اضافه ای که در نظر دارین ایپی هاش استخراج و استفاده شه باید در این ارایه وارد بشه
-  "additional_domains": ["mcin.ircf.space", "mtnn.ircf.space"],
-
+  "additional_domains": [
+    "isegaro.ddns.net",
+    "mcicloudflare.ddns.net",
+    "mtncloudflare.sytes.net",
+    "free1.ar6ambot.pw",
+    "j.mmd603.online"
+  ],
+  
   // آیا ورودی ایپی های کاستوم استفاده شود؟
   "include_custom_ips": true,
 
