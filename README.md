@@ -1,5 +1,7 @@
 # CF-Clean-IP-Setter
 
+[نسخه فارسی مستند](README-FA.md)
+
 Test CloudFlare public ips and local file of ips and automatically set them to domain on CloudFlare.
 
 It can retrieve and scan ips, and it can set them to a domain Or you can provide the result file and skip the scanning part of it.
